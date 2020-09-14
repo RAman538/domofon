@@ -12,15 +12,15 @@ $(document).ready(function() {
         $('.menu ul').slideToggle();
     });
 
-    const news = document.querySelector('.news');
-    const newsInner = document.querySelector('.news__inner');
-    const newsSlider = document.querySelector('.news__slider');
-    const newsBlog = document.querySelectorAll('.news__blog');
-    const newsImages = document.querySelectorAll('.news__contain__img-box');
-    const newsBlogAfter = document.querySelectorAll('.news__blog');
-    const footerInner = document.querySelector('.footer__inner');
-    const footerMap = document.querySelector('.footer__map');
-    const footerInfo = document.querySelector('.footer__info');
+    const news = document.querySelector('.news'),
+     newsInner = document.querySelector('.news__inner'),
+     newsSlider = document.querySelector('.news__slider'),
+     newsBlog = document.querySelectorAll('.news__blog'),
+     newsImages = document.querySelectorAll('.news__contain__img-box'),
+     newsBlogAfter = document.querySelectorAll('.news__blog'),
+     footerInner = document.querySelector('.footer__inner'),
+     footerMap = document.querySelector('.footer__map'),
+     footerInfo = document.querySelector('.footer__info');
 
     window.addEventListener('resize', function(e) {
         let width = e.target.document.documentElement.clientWidth;
