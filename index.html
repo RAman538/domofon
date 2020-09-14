@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body">
     <header class="header">
@@ -37,6 +38,9 @@
                         </a>
                     </div>
                     <nav class="menu">
+                        <div class="header__btn-menu">
+                            <span class="icon-bars"></span>
+                        </div>
                         <ul>
                             <li><a href="#">Главная</a></li>
                             <li><a href="#">О компании</a></li>
@@ -116,11 +120,9 @@
             </div>
             <div class="services__items">
                 <div class="services__item">
-                    <div style="width: 300px;height: 200px;margin-left: auto;margin-right: auto;">
-                        <div
-                            style="width: 90%;height: 90%;border: 1px solid #cecece;border-radius: 5px;display: flex;justify-content: center;align-items: center;overflow: hidden;position: relative;transform: translate(-50%, -50%);top: 50%;left: 50%;">
-                            <img style="max-width: none;min-width: auto;min-height: auto;height: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"
-                                src="img/evening_city.jpg" alt="">
+                    <div class="services__contain__img-box">
+                        <div class="services__img-box">
+                            <img class="services__img" src="img/evening_city.jpg" alt="">
                         </div>
                     </div>
                     <div class="services__item-title">
@@ -137,11 +139,9 @@
                     </div>
                 </div>
                 <div class="services__item">
-                    <div style="width: 300px;height: 200px;margin-left: auto;margin-right: auto;">
-                        <div
-                            style="width: 90%;height: 90%;border: 1px solid #cecece;border-radius: 5px;display: flex;justify-content: center;align-items: center;overflow: hidden;position: relative;transform: translate(-50%, -50%);top: 50%;left: 50%;">
-                            <img style="max-width: none;min-width: auto;min-height: auto;height: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"
-                                src="img/evening_city.jpg" alt="">
+                    <div class="services__contain__img-box">
+                        <div class="services__img-box">
+                            <img class="services__img" src="img/evening_city.jpg" alt="">
                         </div>
                     </div>
                     <div class="services__item-title">
@@ -158,11 +158,9 @@
                     </div>
                 </div>
                 <div class="services__item">
-                    <div style="width: 300px;height: 200px;margin-left: auto;margin-right: auto;">
-                        <div
-                            style="width: 90%;height: 90%;border: 1px solid #cecece;border-radius: 5px;display: flex;justify-content: center;align-items: center;overflow: hidden;position: relative;transform: translate(-50%, -50%);top: 50%;left: 50%;">
-                            <img style="max-width: none;min-width: auto;min-height: auto;height: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"
-                                src="img/evening_city.jpg" alt="">
+                    <div class="services__contain__img-box">
+                        <div class="services__img-box">
+                            <img class="services__img" src="img/evening_city.jpg" alt="">
                         </div>
                     </div>
                     <div class="services__item-title">
@@ -199,13 +197,26 @@
         </div>
     </section>
 
+    <section class="vimeo">
+        <div class="vimeo__contain__control__img-box">
+            <div class="vimeo__contain__img-box">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/yHd0hC44SWQ" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="form">
         <div class="container">
+            <!-- <div class="form__contain"> -->
             <div class="form__inner">
                 <div class="form__content">
                     <div class="form__contain__img-box">
                         <div class="form__img-box">
-                            <img src="img/stockvault-beautiful-house2.jpg" alt="">
+                            <img src="img/engineering.jpg" alt="">
                         </div>
 
                     </div>
@@ -258,6 +269,7 @@
                     </div>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -365,48 +377,46 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="news__blog">
-                    <div class="news__contain__img-box">
-                        <div class="news__img-box">
-                            <!-- <div class="news__images"> -->
-                            <img src="img/stockvault-yard-and-cars144685.jpg" alt="">
-                            <!-- <div class="news__date">08.08</div>
-                            </div> -->
+                <div>
+                    <a href="#" class="news__blog">
+                        <div class="news__contain__img-box">
+                            <div class="news__img-box">
+                                <img src="img/stockvault-yard-and-cars144685.jpg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="news__blog-title">
-                        Новость компании
-                    </div>
-                    <div class="news__blog-text">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Voluptatem modi magnam
-                        odit corporis porro. Odio blanditiis accusamus
-                        impedit, repudiandae perspiciatis unde fuga soluta
-                        nobis reprehenderit voluptatibus et quibusdam porro.
-                        Aliquam.
-                    </div>
-                </a>
-                <a href="#" class="news__blog">
-                    <div class="news__contain__img-box">
-                        <div class="news__img-box">
-                            <!-- <div class="news__images"> -->
-                            <img src="img/stockvault-yard-and-cars144685.jpg" alt="">
-                            <!-- <div class="news__date">08.08</div>
-                            </div> -->
+                        <div class="news__blog-title">
+                            Новость компании
                         </div>
-                    </div>
-                    <div class="news__blog-title">
-                        Новость компании
-                    </div>
-                    <div class="news__blog-text">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Voluptatem modi magnam
-                        odit corporis porro. Odio blanditiis accusamus
-                        impedit, repudiandae perspiciatis unde fuga soluta
-                        nobis reprehenderit voluptatibus et quibusdam porro.
-                        Aliquam.
-                    </div>
-                </a>
+                        <div class="news__blog-text">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptatem modi magnam
+                            odit corporis porro. Odio blanditiis accusamus
+                            impedit, repudiandae perspiciatis unde fuga soluta
+                            nobis reprehenderit voluptatibus et quibusdam porro.
+                            Aliquam.
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="news__blog">
+                        <div class="news__contain__img-box">
+                            <div class="news__img-box">
+                                <img src="img/stockvault-yard-and-cars144685.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="news__blog-title">
+                            Новость компании
+                        </div>
+                        <div class="news__blog-text">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptatem modi magnam
+                            odit corporis porro. Odio blanditiis accusamus
+                            impedit, repudiandae perspiciatis unde fuga soluta
+                            nobis reprehenderit voluptatibus et quibusdam porro.
+                            Aliquam.
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -447,11 +457,11 @@
         <div class="footer__copy">
             <div class="container">
                 <div class="copy__text">
-                    2020 created by "SkyNet" studio. All rights reserved.
+                    2020 created by "SkyFon" studio. All rights reserved.
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
 
 
     <div id="modal">

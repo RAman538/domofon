@@ -247,17 +247,48 @@ body {
     border: 3px solid #e6e6e6;
 }
 .services__items {
-    display: flex;
+    display: block;
     justify-content: space-between;
 }
 .services__item {
-    max-width: 360px;
+    max-width: 80%;
     text-align: center;
     padding: 30px 0px 80px;
     position: relative;
-    min-height: 375px;
+    min-height: 330px;
+    margin: 60px auto;
     background-color: hsl(0, 0%, 90%);
     box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.3);
+}
+.services__contain__img-box {
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services__img-box {
+    width: 90%;
+    height: 90%;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.services__img {
+    max-width: none;
+    min-width: auto;
+    min-height: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .services__item-title {
     color: #212020;
@@ -318,13 +349,29 @@ body {
 .about__btn.default__btn {
     color: #2878c4;
 }
+.vimeo {
+    padding-top: 30px;
+}
+.video iframe {
+    width: 1350px; 
+    height: 600px;
+}
+.vimeo__contain__control__img-box {
+    
+    display: flex;
+    justify-content: center;
+}
 .form {
     padding-top: 30px;
 }
+/* .form__contain__control__img-box {
+    display: flex;
+    justify-content: center;
+} */
 .form__inner {
     padding-bottom: 40px;
     /* background-image: url(../img/stockvault-beautifull-house.jpg); */
-    min-height: 460px;
+   /*  min-height: 460px; */
     /* background-repeat: no-repeat;
     background-position: bottom right; */
     position: relative;
@@ -342,7 +389,8 @@ body {
     width: 100%;
     height: 100%;
     border: 1px solid #cecece;
-    border-radius: 5px;display: flex;
+    border-radius: 5px;
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -525,14 +573,21 @@ body {
 }
 .news__inner {
     display: flex;
-    justify-content: space-between;
-    position: relative;
+    /* justify-content: space-between; */
+    /* position: relative; */
+    /* flex-direction: row; */
 }
 .news__contain__img-box {
     width: 300px;
     height: 200px;
     margin-left: auto;
     margin-right: auto;
+}
+.news__contain__img-box-extra {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 50px;
 }
 .news__img-box {
     width: 100%;
@@ -582,10 +637,21 @@ body {
     text-align: center;
     line-height: 30px;
 }
+.news__blog-after::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 .news__blog {
     max-width: 260px;
     width: 100%;
     margin-left: 50px;
+}
+.news__blog-extra {
+    display: block;
+    margin-bottom: 30px;
+    max-width: 100%;
+    margin-left: 0px;
 }
 .news__blog-title {
     font-size: 15px;
@@ -649,10 +715,12 @@ body {
 }
 .footer__map {
     padding-top: 10px;
+    max-width: 630px;
+    width: 100%;
 }
 .footer__map iframe {
-    min-width: 630px;
-    height: 250px;
+   /*  min-width: 630px; */
+   height: 250px;
     width: 100%;
 }
 .footer__info-title {
@@ -728,4 +796,7 @@ body {
     background-color: #67a4dd;
     border: none;
 }
-
+.header__btn-menu {
+    display: none;
+    font-size: 38px;
+}
